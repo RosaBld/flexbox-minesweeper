@@ -1,0 +1,73 @@
+body {
+    font-family: 'VT323', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 400px;
+    border: ridge 20px rgb(217, 217, 217);
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: lightgrey;
+}
+
+.flex-container > div {
+    text-align: center;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.one {
+    box-sizing: border-box;
+    color: blue;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.two {
+    box-sizing: border-box;
+    color: green;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.three {
+    box-sizing: border-box;
+    color: red;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.empty {
+    box-sizing: border-box;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.mine {
+    box-sizing: border-box;
+    border-bottom: dotted black;
+    border-right: dotted black;
+    width: 50px;
+    height: 50px;
+}
+
+.full {
+    border-right: ridge 10px black;
+    border-bottom: ridge 10px black;
+    border-top: ridge 10px white;
+    border-left: ridge 10px white;
+    background-color: rgb(175, 175, 175);
+    box-sizing: border-box;
+}
+
+.full:hover {
+    display: none;
+}
