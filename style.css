@@ -60,6 +60,7 @@ body {
 }
 
 .full {
+    position: relative;
     border-right: ridge 10px black;
     border-bottom: ridge 10px black;
     border-top: ridge 10px white;
@@ -68,6 +69,37 @@ body {
     box-sizing: border-box;
 }
 
-.full:hover {
-    display: none;
+.mine-hunder:hover::before {
+    content: "-after";
+    position: absolute;
+    box-sizing: border-box;
+    border-bottom: dotted black;
+    border-right: dotted black;
+    height: 40px;
+    width: 40px;
 }
+
+.one-hunder:hover::before {
+    position: absolute;
+    box-sizing: border-box;
+    color: blue;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.two-hunder:hover::before {
+    position: absolute;
+    box-sizing: border-box;
+    color: green;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
+.three-hunder:hover::before {
+    position: absolute;
+    box-sizing: border-box;
+    color: red;
+    border-bottom: dotted black;
+    border-right: dotted black;
+}
+
